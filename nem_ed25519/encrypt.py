@@ -30,7 +30,7 @@ def encrypt(sk, pk, msg):
 def decrypt(sk, pk, enc):
     assert isinstance(sk, str), 'SK is hex str'
     assert isinstance(pk, str), 'PK is hex str'
-    assert isinstance(enc, bytes), 'Enc is bytes'
+    # assert isinstance(enc, bytes), 'Enc is bytes'
     sk = unhexlify(sk.encode())[::-1]
     pk = unhexlify(pk.encode())
 
